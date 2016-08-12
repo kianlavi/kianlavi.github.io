@@ -96,6 +96,21 @@ section.me {
         margin-top: -2rem;
         font-weight: 300;
     }
+    
+    .more-about-me {
+        height: 0;
+        opacity: 0.7;
+        overflow: hidden;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    .more-about-me_bigger {
+        height: 225px;
+    }
+
+    .emoji_bigger {
+        font-size: 32px;
+    }
 }
 
 section.case-studies {
