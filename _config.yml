@@ -16,7 +16,7 @@
 title: Kian Lavi · Design
 email: kianlavi+jobs@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  I’m Kian Lavi, a product designer, documentary photographer, and occasional coder.
+  I’m Kian Lavi, <a href="#">a product designer</a>, <a href="http://photography.kianlavi.com">documentary photographer</a>, and <a href="http://github.com/kianlavi">occasional coder</a>.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://by.kianlavi.com" # the base hostname & protocol for your site
 twitter_username: kianlavi
