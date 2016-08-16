@@ -1,3 +1,4 @@
-- title: MakerSights Mobile App
+- title: Alibi: Get Out of Anything
   year: 2016
-  img_url: http://www.frankchimero.com/img/writing/borderlands.jpg
+  img_url: {{ site.baseurl }}/study-alibi.png
+  url: https://medium.com/p/44bfeff0c6af
