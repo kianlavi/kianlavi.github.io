@@ -1,4 +1,4 @@
 - title: Alibi: Get Out of Anything
   year: 2016
-  img_url: {{ site.baseurl }}/study-alibi.png
+  img_url: /study-alibi.png
   url: https://medium.com/p/44bfeff0c6af
