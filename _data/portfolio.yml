@@ -1,18 +1,19 @@
-- title: Alibi for iOS
+- title: Boost X and Boost Y (iOS/watchOS)
   year: 2016
-  img_url: http://www.frankchimero.com/img/writing/borderlands.jpg
-
-- title: BoostX and BoostY for iOS and watchOS
-  year: 2016
-  img_url: http://www.frankchimero.com/img/writing/borderlands.jpg
-  img_alt:
-
-- title: Designing ProductBio for the Government
+  img_url: assets/study-boost.png
+  url: https://medium.com/kianlavi/boost-media-d63754677f49
+  
+- title: Nova.ai
   year: 2015
-  img_url: http://www.frankchimero.com/img/writing/borderlands.jpg
-  img_alt:
+  img_url: https://d262ilb51hltx0.cloudfront.net/max/1200/1*GwY7vmtyJK83L9gJnQKcvQ.jpeg
+  url: https://medium.com/kianlavi/designing-nova-ai-842c09941774
 
-- title: PlayMemories Mobile and the QX100
-  year: 2014
-  img_url: http://www.frankchimero.com/img/writing/borderlands.jpg
-  img_alt:
+- title: ProductBio
+  year: 2015
+  img_url: assets/study-productbio.png
+  url: https://medium.com/kianlavi/creating-a-more-sustainable-government-at-productbio-7f8e6b8cc123
+
+- title: Sony
+  year: 2013
+  img_url: assets/study-sony.png
+  url: https://medium.com/kianlavi/redesigning-playmemories-mobile-qx100-8a1ee44d4023
