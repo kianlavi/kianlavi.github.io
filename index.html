@@ -34,7 +34,7 @@ layout: default
 
             {% for featured in site.data.featured %}
             <div>
-                <a href="#">
+                <a href="{{ featured.url }}">
                     <img src="{{ featured.img_url }}" alt="{{ featured.title }}" class="photo--rectangle">
                     <b class="title">✨ {{ featured.title }} ✨</b>
                     <em class="year">{{ featured.year }}</em>
@@ -57,7 +57,7 @@ layout: default
 
             {% for portfolio in site.data.portfolio %}
             <div>
-                <a href="#">
+                <a href="{{ portfolio.url }}">
                     <img src="{{ portfolio.img_url }}" alt="{{ portfolio.title }}" class="photo--rectangle">
                     <b class="title">{{ portfolio.title }}</b>
                     <em class="year">{{ portfolio.year }}</em>
