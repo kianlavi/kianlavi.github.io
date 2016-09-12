@@ -73,6 +73,10 @@ header {
         display: inline-block;
         margin-right: 1.5rem;
         padding-bottom: 0.5rem;
+        
+        &:nth-of-type(4) {
+            margin-right: 0;
+        }
     }
 }
 
