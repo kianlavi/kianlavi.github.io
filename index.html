@@ -4,12 +4,14 @@ layout: default
 
 <section class="me">
 
-    <img src="https://lh3.googleusercontent.com/PUZFIHKs40OiPwQ_hQz_TkdBoaeMX-C9aqgsX4_erAJHazO9DxzLswVatRQBO91hjC7B51ul5ptfARIUY7H0bxxmv3799cThEXJudjmeSsW6jSR9xNg6Dm-n6ixbtURJ3AXlQRlbohKYBj59KDfZm0Nxb4vX8rIKu5w9T2MA5lFw3B-vIvOyls1t55CsWz2193z4Q4eKLYaQdsSH-FFWJ31OrS2B81KI25BdngM7p78G7BVnEBZw9pRh-qktEkMFSOyVwqmoU2wjxGGXo8YakHLG5uQnSWBOMjVmH-gJbhqGKgYbTsqgdw6YWuzvzkm0DW2MusvLKLWlccIAs5EFyl-I05QBclaOXquw3l6Rg8gpAOGA7hCjYzURJQjJbsnzycEvIxDlqIJwZrjb9lpvFVjLKk-Ar3pDZ3IIqsSYn3yzMdHWWtVO1VZawhauIoOATf4_TOftHglvSHTMckCk3-Zm3fI8xjD2ZVsStv2mXuWugJgCkE46oidPGE6uRYLEWeN6c71QPXvHRbLpsUm0DYQ5KS6dvCxV7qUpVJM43Y7_okKa4xebT0mZt3KiN2L0lLN39aebMFUTaIUlL-tr4d-eQeMup4s-=s306-no" alt="A portrait of Kian Lavi" class="photo--circle photo_me" id="photo_me">
+    <a href="#photo_me" onclick="document.getElementById('more-about-me').classList.toggle('more-about-me_bigger');">
+        <img src="https://lh3.googleusercontent.com/PUZFIHKs40OiPwQ_hQz_TkdBoaeMX-C9aqgsX4_erAJHazO9DxzLswVatRQBO91hjC7B51ul5ptfARIUY7H0bxxmv3799cThEXJudjmeSsW6jSR9xNg6Dm-n6ixbtURJ3AXlQRlbohKYBj59KDfZm0Nxb4vX8rIKu5w9T2MA5lFw3B-vIvOyls1t55CsWz2193z4Q4eKLYaQdsSH-FFWJ31OrS2B81KI25BdngM7p78G7BVnEBZw9pRh-qktEkMFSOyVwqmoU2wjxGGXo8YakHLG5uQnSWBOMjVmH-gJbhqGKgYbTsqgdw6YWuzvzkm0DW2MusvLKLWlccIAs5EFyl-I05QBclaOXquw3l6Rg8gpAOGA7hCjYzURJQjJbsnzycEvIxDlqIJwZrjb9lpvFVjLKk-Ar3pDZ3IIqsSYn3yzMdHWWtVO1VZawhauIoOATf4_TOftHglvSHTMckCk3-Zm3fI8xjD2ZVsStv2mXuWugJgCkE46oidPGE6uRYLEWeN6c71QPXvHRbLpsUm0DYQ5KS6dvCxV7qUpVJM43Y7_okKa4xebT0mZt3KiN2L0lLN39aebMFUTaIUlL-tr4d-eQeMup4s-=s306-no" alt="A portrait of Kian Lavi" class="photo--circle photo_me" id="photo_me">
+    </a>
 
     <p class="who-am-i">
         {{ site.description }}
     </p>
-    
+
     <div class="more-about-me" id="more-about-me">
         <p>
             I'm currently doing freelance design in San Francisco. I work with young startups, taking both a hands-on and an advisory role to implement design into their products and their processes.
@@ -27,7 +29,7 @@ layout: default
     <div class="wrapper--case-studies wrapper--case-studies_featured">
 
         <aside>
-            <h2>Featured</h2>
+            <h2 id="featured">Featured</h2>
         </aside>
 
         <div class="grid">
@@ -35,9 +37,11 @@ layout: default
             {% for featured in site.data.featured %}
             <div>
                 <a href="{{ featured.url }}">
-                    <img src="{{ featured.img_url }}" alt="{{ featured.title }}" class="photo--rectangle">
+                    <div class="photo--rectangle"
+                        alt="{{ featured.title }}"
+                        style="background-image: url('{{ featured.img_url }}')"></div>
                     <b class="title">✨ {{ featured.title }} ✨</b>
-                    <em class="year">{{ featured.year }}</em>
+                    <em class="data">{{ featured.data }}</em>
                 </a>
             </div>
             {% endfor %}
@@ -58,9 +62,11 @@ layout: default
             {% for portfolio in site.data.portfolio %}
             <div>
                 <a href="{{ portfolio.url }}">
-                    <img src="{{ portfolio.img_url }}" alt="{{ portfolio.title }}" class="photo--rectangle">
+                    <div class="photo--rectangle"
+                        alt="{{ portfolio.title }}"
+                        style="background-image: url('{{ portfolio.img_url }}')"></div>
                     <b class="title">{{ portfolio.title }}</b>
-                    <em class="year">{{ portfolio.year }}</em>
+                    <em class="data">{{ portfolio.data }}</em>
                 </a>
             </div>
             {% endfor %}
@@ -73,8 +79,9 @@ layout: default
 <section class="writing">
 
     <div class="row">
+
         <aside>
-            <h2>2016</h2>
+            <h2>Experiments</h2>
         </aside>
 
         <div>
@@ -82,16 +89,31 @@ layout: default
             <ul class="list">
 
                 <li>
-                    <a href="#">
-                        <b class="title">Product Designer & Front-End Developer</b>
-                        <em class="date">MakerSights</em>
+                    <a href="http://100daysofbus.persona.co">
+                        <b class="title">#100daysofbus</b>
+                        <em class="date">Documentary · Photojournalism</em>
                     </a>
                 </li>
 
                 <li>
-                    <a href="#">
-                        <b class="title">UI Designer</b>
-                        <em class="date">WorkingGroupLink</em>
+                    <a href="https://medium.com/the-threshold">
+                        <b class="title">The Threshold</b>
+                        <em class="date">Writing · Essays</em>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="https://github.com/kianlavi">
+                        <b class="title">Calma: Less Anxiety, More Breathing</b>
+                        <em class="date">iOS/watchOS App</em>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://github.com/kianlavi/cat-feeder">
+                        <b class="title">Catduino: An Automated Cat Feeder</b>
+                        <em class="date">Arduino · Hardware</em>
                     </a>
                 </li>
 
@@ -103,7 +125,7 @@ layout: default
 
     <div class="row">
         <aside>
-            <h2>2015</h2>
+            <h2 class="previous-year">2015</h2>
         </aside>
 
         <div>
@@ -111,23 +133,23 @@ layout: default
             <ul class="list">
 
                 <li>
-                    <a href="#">
-                        <b class="title">Product Designer & Developer</b>
-                        <em class="date">Boost Media</em>
+                    <a href="https://medium.com/p/44bfeff0c6af">
+                        <b class="title">Alibi: Get Out of Anything</b>
+                        <em class="date">iOS App</em>
                     </a>
                 </li>
 
                 <li>
                     <a href="#">
-                        <b class="title">Front-End Developer</b>
-                        <em class="date">Nova</em>
+                        <b class="title">DLA Artwork</b>
+                        <em class="date">Album Art · Photography</em>
                     </a>
                 </li>
 
                 <li>
-                    <a href="#">
-                        <b class="title">UI/UX Designer & Front-End Developer</b>
-                        <em class="date">ProductBio</em>
+                    <a href="https://babazorg.tumblr.com">
+                        <b class="title">The Babazorg Project</b>
+                        <em class="date">Photography · Documentary</em>
                     </a>
                 </li>
 
@@ -139,7 +161,7 @@ layout: default
 
     <div class="row">
         <aside>
-            <h2>2013</h2>
+            <h2 class="previous-year">2013</h2>
         </aside>
 
         <div>
@@ -147,16 +169,31 @@ layout: default
             <ul class="list">
 
                 <li>
-                    <a href="#">
-                        <b class="title">Human Factors Engineer, Intern</b>
-                        <em class="date">Sony Electronics</em>
+                    <a href="http://photography.kianlavi.com/portfolio-item/yellow-mambo-day/">
+                        <b class="title">Yellow Mambo DaY</b>
+                        <em class="date">Photography · Exhibition</em>
                     </a>
                 </li>
 
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="row">
+        <aside>
+            <h2 class="previous-year">2012</h2>
+        </aside>
+
+        <div>
+
+            <ul class="list">
+
                 <li>
-                    <a href="#">
-                        <b class="title">Product Designer</b>
-                        <em class="date">KA Lite</em>
+                    <a href="http://photography.kianlavi.com/portfolio-item/yellow-mambo-night/">
+                        <b class="title">Yellow Mambo NiGht</b>
+                        <em class="date">Photography · Exhibition</em>
                     </a>
                 </li>
 

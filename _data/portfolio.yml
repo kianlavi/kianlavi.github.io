@@ -1,19 +1,19 @@
-- title: Boost X and Boost Y (iOS/watchOS)
-  year: 2016
-  img_url: assets/study-boost.png
-  url: https://medium.com/kianlavi/boost-media-d63754677f49
-  
-- title: Nova.ai
-  year: 2015
-  img_url: assets/study-nova.png
-  url: https://medium.com/kianlavi/designing-nova-ai-842c09941774
+- title: "Swipe Right to Approve Ads"
+  data: "Boost Media (iOS · watchOS)"
+  img_url: assets/study-boost_duotone.jpg
+  url: https://medium.com/kianlavi/boost-media-d63754677f49?source=collection_home---2------0----------
 
-- title: ProductBio
-  year: 2015
-  img_url: assets/study-productbio.png
-  url: https://medium.com/kianlavi/creating-a-more-sustainable-government-at-productbio-7f8e6b8cc123
+- title: "Redesigning the Advertiser's Toolbox"
+  data: Boost Media (Web · Angular)
+  img_url: assets/study-boost1.png
+  url: https://medium.com/kianlavi/creating-a-more-sustainable-government-at-productbio-7f8e6b8cc123#.kefbzgm91
 
-- title: Sony
-  year: 2013
+- title: "Building a Platform to Test Everything"
+  data: "MakerSights (Web · Angular)"
+  img_url: assets/study-makersights.png
+  url: https://medium.com/kianlavi/designing-nova-ai-842c09941774#.3j5m6nfmn
+
+- title: "PlayMemories Mobile and the QX100"
+  data: "Sony (iOS · Cameras)"
   img_url: assets/study-sony.png
-  url: https://medium.com/kianlavi/redesigning-playmemories-mobile-qx100-8a1ee44d4023
+  url: https://medium.com/kianlavi/redesigning-playmemories-mobile-qx100-8a1ee44d4023?source=collection_home---2------1----------

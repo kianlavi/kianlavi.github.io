@@ -73,7 +73,7 @@ header {
         display: inline-block;
         margin-right: 1.5rem;
         padding-bottom: 0.5rem;
-        
+
         &:nth-of-type(4) {
             margin-right: 0;
         }
@@ -100,14 +100,14 @@ section.me {
         margin-top: -2rem;
         font-weight: 300;
     }
-    
+
     .more-about-me {
         height: 0;
         opacity: 0.7;
         overflow: hidden;
         transition: all 0.2s ease-in-out;
     }
-    
+
     .more-about-me_bigger {
         height: 19em;
     }
@@ -148,6 +148,10 @@ section.case-studies {
         }
 
         .photo--rectangle {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 237px;
             margin-bottom: 0.5em;
             width: 100%;
         }
@@ -167,7 +171,7 @@ section.case-studies {
             font-weight: $base--weight;
         }
 
-        .year {
+        .data {
             color: #bbb;
             font-size: $base--size_small;
             font-style: normal;
@@ -191,6 +195,10 @@ section.writing {
 
         div {
             width: 75%;
+        }
+
+        .previous-year {
+            opacity: 0.5;
         }
 
         ul {
@@ -286,7 +294,7 @@ footer {
 
 
 @media (min-width: 600px) {
-    
+
     section.me {
         .more-about-me_bigger {
             height: 225px;
