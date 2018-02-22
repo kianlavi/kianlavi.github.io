@@ -342,3 +342,22 @@ footer {
     section.writinglist aside h2 { margin: 0; }
     body:not(.writingindex) div.writingwrapper { padding-top: 2.5rem; }
 }
+
+
+/* While I'm busy at work */
+header.header {
+    max-height: 10vh;
+}
+
+section.me {
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section.case-studies, 
+section.writing,
+footer {
+    display: none;
+}
