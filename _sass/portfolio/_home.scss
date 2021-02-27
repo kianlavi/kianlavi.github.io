@@ -89,6 +89,17 @@ section.me {
     max-width: $base--width;
     padding: 1rem;
     text-align: center;
+    
+    #photo_me {
+        background-color: rgb(255, 214, 0);
+        border-radius: 1rem;
+        padding-top: 2rem;
+    }
+    
+    img {
+        border-radius: 1rem;
+        mix-blend-mode: multiply;
+    }
 
     .photo_me {
         margin: 0 auto 4rem;
@@ -96,9 +107,17 @@ section.me {
     }
 
     .who-am-i {
+        background-color: rgb(255, 214, 0);
+        border-radius: 1rem;
         font-size: 24px;
-        margin-top: -2rem;
         font-weight: 300;
+        margin-top: -2rem;
+        padding-bottom: 2rem;
+        
+        a {
+            color: #222;
+            font-weight: 400;
+        }
     }
 
     .more-about-me {
