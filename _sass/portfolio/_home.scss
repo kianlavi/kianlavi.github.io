@@ -31,7 +31,7 @@ a {
 }
 
 .photo--circle {
-    border-radius: 100%;
+    border-radius: 1rem;
 }
 
 header {
@@ -89,6 +89,17 @@ section.me {
     max-width: $base--width;
     padding: 1rem;
     text-align: center;
+    
+    #photo_me {
+        background-color: rgb(255, 214, 0);
+        border-radius: 1rem;
+        padding-top: 2rem;
+    }
+    
+    img {
+        border-radius: 1rem;
+        mix-blend-mode: multiply;
+    }
 
     .photo_me {
         margin: 0 auto 4rem;
@@ -96,9 +107,17 @@ section.me {
     }
 
     .who-am-i {
+        background-color: rgb(255, 214, 0);
+        border-radius: 1rem;
         font-size: 24px;
-        margin-top: -2rem;
         font-weight: 300;
+        margin-top: -2rem;
+        padding-bottom: 2rem;
+        
+        a {
+            color: #222;
+            font-weight: 400;
+        }
     }
 
     .more-about-me {
@@ -151,6 +170,7 @@ section.case-studies {
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+            border-radius: 1rem;
             height: 237px;
             margin-bottom: 0.5em;
             width: 100%;
@@ -359,5 +379,5 @@ section.me {
 section.case-studies, 
 section.writing,
 footer {
-    display: none;
+//    display: none;
 }
