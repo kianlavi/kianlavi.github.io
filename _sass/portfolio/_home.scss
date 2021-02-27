@@ -31,7 +31,7 @@ a {
 }
 
 .photo--circle {
-    border-radius: 100%;
+    border-radius: 1rem;
 }
 
 header {
@@ -151,6 +151,7 @@ section.case-studies {
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+            border-radius: 1rem;
             height: 237px;
             margin-bottom: 0.5em;
             width: 100%;
@@ -359,5 +360,5 @@ section.me {
 section.case-studies, 
 section.writing,
 footer {
-    display: none;
+//    display: none;
 }
