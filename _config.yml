@@ -13,10 +13,12 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Kian Lavi · Design
+title: Kian Lavi Design
 email: kianlavi+jobs@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  I’m Kian Lavi, <a href="#featured">a product designer</a>, <a href="http://ph.kianlavi.com">documentary photographer</a>, and <a href="http://github.com/kianlavi">occasional programmer</a>.
+  I’m Kian Lavi (he/him), a <strong>product designer</strong>, <strong>ethicist</strong>, and <strong>documentary photographer.</strong>
+extras: > 
+  I'm currently a design and ethics lead for the Privacy team at Facebook. If you need me, <a class="link-special" href="mailto:kianlavi+portfolio@gmail.com?subject=Hi Kian!">you can email me.</a> <br>It's pronounced key • on.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://kianlavi.com" # the base hostname & protocol for your site
 twitter_username: kianlavi
