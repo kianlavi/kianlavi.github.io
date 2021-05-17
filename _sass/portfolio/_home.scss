@@ -6,9 +6,8 @@ $base--space:        $base--size;
 $base--weight:       $base-font-weight;
 $base--width:        $content-width;
 
-$color--kian:         $brand-color;
+$color--kian:         $text-color;
 $color--text:         $text-color;
-$color--links:        $grey-color;
 $color--background:   $background-color;
 
 * {
@@ -16,186 +15,175 @@ $color--background:   $background-color;
     text-rendering: optimizeLegibility;
 }
 
+body {
+    background-color: #fff2d4;
+    color: $brand-color;
+}
+
 h1, h2, h3, h4 {
     font-size: 1rem;
     font-weight: 600;
 }
 
-a {
-    color: $color--links;
+// mostly for the "I am a..." section
+h1 {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 2.5rem;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+h3 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 1.2rem;
+    text-transform: uppercase;
+}
+
+a {  
+    &:hover {
+        color: $text-color;
+        text-decoration: none;
+    }    
+}
+
+a.link-special {
+    transition: 
+        border-bottom 0.2s ease-in-out,
+        color 0.2s ease-in-out;
+    border-bottom: 1px solid $color--background; 
 
     &:hover {
-        color: $color--kian;
-        text-decoration: none;
+        border-bottom: 1px solid $text-color;
     }
 }
 
-.photo--circle {
-    border-radius: 1rem;
+strong {
+    font-weight: 500;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
 
 header {
-    margin-bottom: 0;
     padding: 2rem;
     text-align: center;
 
     a {
-        font-size: 14px;
-        padding-bottom: 2px;
-    }
-
-    .name,
-    .active {
-        color: $color--text;
-
-        &:hover {
-            color: $color--kian;
-        }
-    }
-
-    .name {
-        font-size: 16px;
+        font-size: 1.25rem;
         font-weight: 500;
     }
 
-    .active {
-        border-bottom: 2px solid $text-color;
-    }
-
-    nav ul {
-        display: inline-block;
+    ul {
+        display: flex;
+        justify-content: center;
         list-style: none;
-        margin: 0 auto;
-        padding: 0;
+        margin-left: 0;
     }
 
-    nav ul li {
-        display: inline-block;
-        margin-right: 1.5rem;
-        padding-bottom: 0.5rem;
-
-        &:nth-of-type(4) {
-            margin-right: 0;
-        }
+    li {
+        padding: 0rem 1rem;
     }
+
+    li a {
+        font-size: 0.75rem;
+        opacity: 0.66;
+        text-transform: uppercase;;
+    }
+
+    .active {
+        color: $text-color;
+        opacity: 1;
+    }    
 }
 
 section {
     margin: 0 auto;
-    max-width: 55rem;
 }
 
-section.me {
-    max-width: $base--width;
-    padding: 1rem;
-    text-align: center;
-    
-    #photo_me {
-        background-color: rgb(255, 214, 0);
-        border-radius: 1rem;
-        padding-top: 2rem;
-    }
-    
-    img {
-        border-radius: 1rem;
-        mix-blend-mode: multiply;
+// sets up a row-based flexbox, with padding atop and bottom
+section.about-section {
+    align-items: center;
+    display: flex; 
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    .photo-me {
+        border-radius: 8px;
+        max-height: 275px;
     }
 
-    .photo_me {
-        margin: 0 auto 4rem;
-        max-width: $base--space * 12.5;
+    .text-me {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
     }
 
-    .who-am-i {
-        background-color: rgb(255, 214, 0);
-        border-radius: 1rem;
-        font-size: 24px;
-        font-weight: 300;
-        margin-top: -2rem;
-        padding-bottom: 2rem;
-        
-        a {
-            color: #222;
-            font-weight: 400;
-        }
-    }
-
-    .more-about-me {
-        height: 0;
-        opacity: 0.7;
-        overflow: hidden;
-        transition: all 0.2s ease-in-out;
-    }
-
-    .more-about-me_bigger {
-        height: 19em;
-    }
-
-    .emoji_bigger {
-        font-size: 32px;
+    .emoji-me {
+        font-size: 2rem;
     }
 }
 
-section.case-studies {
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    // border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    margin-left: 1rem;
-    margin-right: 1rem;
-    padding-top: 1.25rem;
+section.case-studies-section {
+    // background-color: red;
+    border-top: 2px solid $brand-color;
+    margin-top: 2rem;
+    padding: 1rem 0;
 
-    .wrapper--case-studies_featured {
-        aside {
-            color: $color--kian;
-        }
-
-        .grid {
-            div {
-                width: 100%;
-            }
-        }
+    h3 {
+        padding-bottom: 1rem;
     }
 
-    .grid {
-        flex-wrap: wrap;
-        max-width: none;
-        justify-content: space-between;
-        padding: 0;
+    p {
+        margin-bottom: 0;
+    }
 
-        div {
-            display: block;
-            margin-bottom: 1rem;
-        }
+    .study-photo {
+        background-position: center;
+        background-size: cover;
+        border-radius: 0.5rem;
+        height: 35vh;
+        margin-bottom: 1rem;
+    }
+}
 
-        .photo--rectangle {
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            border-radius: 1rem;
-            height: 237px;
-            margin-bottom: 0.5em;
-            width: 100%;
-        }
+section.experiments-section {
+    .experiments-list {
+        margin: 0; 
+    }
+    .experiment {      
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+    }
 
-        a {
-            display: block;
-        }
+    .experiment-title {
+        border-bottom: 1px solid rgba(10, 78, 156, 0.5);
+        display: flex;
+        padding: 0.75rem 0;
+        width: 50vw;
+    }
 
-        a:hover b.title {
-            color: $color--kian;
-        }
+    .experiment-type {
+        flex-grow: 1;
+        margin-left: 1rem;
+        text-align: right;
+    }
 
-        .title {
-            color: $color--text;
-            display: block;
-            font-size: $base--size_small;
-            font-weight: $base--weight;
-        }
+    p {
+        display: inline-block;
+        font-size: 0.75rem;
+        // width: 49%;
+    }
+}
 
-        .data {
-            color: #bbb;
-            font-size: $base--size_small;
-            font-style: normal;
-        }
+section.featured-section {
+    .study-photo {
+        height: 50vh;
     }
 }
 
@@ -268,106 +256,258 @@ section.writing {
 }
 
 footer {
-    background-color: #e5e5e5;
-    color: gray;
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: $base--weight;
-    margin-top: 1rem;
-    padding: 2rem 1rem;
-
-    .talk-to-me {
-        section {
-            max-width: 50rem;
-        }
-
-        h2 {
-            color: #333;
-            margin: 0;
-        }
-
-        .button--email {
-            background-color: $color--kian;
-            border-radius: 4px;
-            color: #fff;
-            cursor: pointer;
-            display: inline-block;
-            margin-bottom: 1rem;
-            padding: 7px 14px;
-
-            &:hover {
-                background: #333;
-            }
-        }
-    }
 
     .thanks-frank {
         border-top: 1px solid rgba(0, 0, 0, 0.1);
-        font-size: 12px;
         margin-top: 2rem;
         padding-top: 1rem;
 
+        p {
+            font-size: 0.75rem;
+        }
+
         a {
-            border-bottom: 1px solid lightgray;
+            font-weight: 600;
         }
     }
 }
 
-
+// for tablets — desktops
 @media (min-width: 600px) {
+    section {
+        margin: 0 auto;
+        width: 80vw; 
+    }
 
-    section.me {
-        .more-about-me_bigger {
-            height: 225px;
+    .parallax {
+        display: block;
+        height: auto;
+        position: relative;
+        width: auto;
+    }
+    .parallax .parallax-content {
+        // box-shadow: 0 2.5rem 5rem rgba(0, 0, 0, .45);
+        // height: auto;
+        -webkit-transform: perspective(50rem);
+        transform: perspective(50rem);
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        transition: all .4s ease;
+        width: 100%;
+    }
+    .parallax .parallax-content::before {
+        content: "";
+        display: block;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+    .parallax .parallax-top-left {
+        height: 50%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 50%;
+        z-index: 99;
+    }
+    .parallax .parallax-top-left:hover ~ .parallax-content {
+        -webkit-transform: perspective(50rem) rotateX(3deg) rotateY(-3deg);
+        transform: perspective(50rem) rotateX(3deg) rotateY(-3deg);
+    }
+    .parallax .parallax-top-left:hover ~ .parallax-content::before {
+        background: linear-gradient(135deg, rgba(255, 255, 255, .25) 0%, rgba(255, 255, 255, 0) 50%);
+    }
+    .parallax .parallax-top-right {
+        height: 50%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50%;
+        z-index: 99;
+    }
+      .parallax .parallax-top-right:hover ~ .parallax-content {
+        -webkit-transform: perspective(50rem) rotateX(3deg) rotateY(3deg);
+        transform: perspective(50rem) rotateX(3deg) rotateY(3deg);
+    }
+    .parallax .parallax-top-right:hover ~ .parallax-content::before {
+        background: linear-gradient(-135deg, rgba(255, 255, 255, .25) 0%, rgba(255, 255, 255, 0) 50%);
+    }
+    .parallax .parallax-bottom-left {
+        bottom: 0;
+        height: 50%;
+        left: 0;
+        position: absolute;
+        width: 50%;
+        z-index: 99;
+    }
+      .parallax .parallax-bottom-left:hover ~ .parallax-content {
+        -webkit-transform: perspective(50rem) rotateX(-3deg) rotateY(-3deg);
+        transform: perspective(50rem) rotateX(-3deg) rotateY(-3deg);
+    }
+      .parallax .parallax-bottom-left:hover ~ .parallax-content::before {
+        background: linear-gradient(45deg, rgba(255, 255, 255, .25) 0%, rgba(255, 255, 255, 0) 50%);
+    }
+      .parallax .parallax-bottom-right {
+        bottom: 0;
+        height: 50%;
+        position: absolute;
+        right: 0;
+        width: 50%;
+        z-index: 99;
+    }
+    .parallax .parallax-bottom-right:hover ~ .parallax-content {
+        -webkit-transform: perspective(50rem) rotateX(-3deg) rotateY(3deg);
+        transform: perspective(50rem) rotateX(-3deg) rotateY(3deg);
+    }
+    .parallax .parallax-bottom-right:hover ~ .parallax-content::before {
+        background: linear-gradient(-45deg, rgba(255, 255, 255, .25) 0%, rgba(255, 255, 255, 0) 50%);
+    }
+
+    .add-shadow {
+        transition: all 0.2s ease-in-out;
+    }
+
+    .add-shadow:hover {
+        box-shadow: rgba(249, 89, 0, 0.1) 0px 4px 12px;
+        transform: scale(1.05);
+    }
+
+    section.about-section {
+        flex-direction: row;
+        
+        .photo-me {
+            max-height: 275px;
+        }
+        
+        .text-me {
+            padding-left: 2rem;
         }
     }
 
-    section.case-studies {
-        margin-left: auto;
-        margin-right: auto;
+    section.case-studies-section {
+        .study-grid {
+            display: grid;
+            grid-auto-flow: row;
+            grid-column-gap: 2rem;
+            grid-row-gap: 2rem;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-auto-columns: 1fr;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
+            width: 100%;
+        }
+    }
 
-        .wrapper--case-studies {
-            align-items: flex-start;
+    footer {
+        .thanks-frank {
+            p {
+                text-align: right;;
+            }
+        }
+    }
+
+    .hide-on-desktop {
+        display: none!important;
+    }
+}
+
+// for small — large mobile devices
+@media (max-width: 599px) {
+    header {
+        padding-bottom: 1rem;
+    }
+
+    section{
+        width: 90vw;
+    }
+    section.about-section {
+        flex-direction: column;
+        padding-top: 0;
+        
+        .photo-me {
+            max-height: 100%;
+        }
+        
+        .text-me {
+            padding-top: 2rem; 
+        }
+    }
+
+    section.case-studies-section {
+        .case-study {
+            display: block;
+            margin-bottom: 2rem;
+        }
+    }
+
+    section.experiments-section {
+        .experiment-title {
             display: flex;
+            width: 100%;
         }
-
-        .grid {
-            width: 75%;
-
-            div {
-                display: inline-block;
-                width: 49%;
-            }
-
-            div:nth-child(odd) {
-                padding-right: 0.5rem;
-            }
-
-            div:nth-child(even) {
-                padding-left: 0.5rem;
-            }
+    
+        .experiment-type {
+            flex-grow: 1;
+            text-align: right;
+        }
+    
+        p {
+            display: inline-block;
         }
     }
 
-    section.writing {
-        margin-left: auto;
-        margin-right: auto;
+    .hide-on-mobile {
+        display: none!important;
     }
-
-
-
-    section.case-studies aside { width: 25%; }
-    div.textspace>div { width: 75%; }
-    section.writinglist aside { border-bottom: none; }
-    section.writinglist { margin: 0 1em 1em 1em; }
-    section.writinglist aside h2 { margin: 0; }
-    body:not(.writingindex) div.writingwrapper { padding-top: 2.5rem; }
 }
 
+// @media (min-width: 600px) {
 
-/* While I'm busy at work */
-header.header {
-    max-height: 10vh;
-}
+//     section.case-studies {
+//         margin-left: auto;
+//         margin-right: auto;
+
+//         .wrapper--case-studies {
+//             align-items: flex-start;
+//             display: flex;
+//         }
+
+//         .grid {
+//             width: 75%;
+
+//             div {
+//                 display: inline-block;
+//                 width: 49%;
+//             }
+
+//             div:nth-child(odd) {
+//                 padding-right: 0.5rem;
+//             }
+
+//             div:nth-child(even) {
+//                 padding-left: 0.5rem;
+//             }
+//         }
+//     }
+
+//     section.writing {
+//         margin-left: auto;
+//         margin-right: auto;
+//     }
+
+
+
+//     section.case-studies aside { width: 25%; }
+//     div.textspace>div { width: 75%; }
+//     section.writinglist aside { border-bottom: none; }
+//     section.writinglist { margin: 0 1em 1em 1em; }
+//     section.writinglist aside h2 { margin: 0; }
+//     body:not(.writingindex) div.writingwrapper { padding-top: 2.5rem; }
+// }
 
 section.me {
     display: flex;
@@ -376,8 +516,8 @@ section.me {
     justify-content: center;
 }
 
+// comment this out if you want to hide the footer
 section.case-studies, 
-section.writing,
-footer {
-//    display: none;
+section.writing, {
+   display: none;
 }
