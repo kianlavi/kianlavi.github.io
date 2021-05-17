@@ -2,203 +2,113 @@
 layout: default
 ---
 
-<section class="me">
-
-    <a href="#photo_me" onclick="document.getElementById('more-about-me').classList.toggle('more-about-me_bigger');">
-        <img src="https://i.imgur.com/eSVbZbo.jpg" alt="A portrait of Kian Lavi" class="photo--circle photo_me" id="photo_me">
-    </a>
-
-    <p class="who-am-i">
-        {{ site.description }}
-    </p>
-
-    <div class="more-about-me" id="more-about-me">
+<section class="generic-section about-section">
+    <img class="photo-me" 
+        src="https://uploads-ssl.webflow.com/6040295a1a58e254fb164bcc/60402bd1266d16530cee1a63_eSVbZbo-p-500.jpeg" 
+        alt="A portrait of Kian Lavi"
+    >
+    <div class="text-me">
+        <h1>
+            {{site.description}}
+        </h1>
         <p>
-            Pardon the emptiness. I'm currently leading design and ethics for the Privacy team at Facebook. If you need me, <a href="mailto:kianlavi+portfolio@gmail.com?subject=Hi Kian!">you can email me.</a>
+            {{site.extras}}
         </p>
-        <p class="emoji_bigger">👋🏾</p>
+        <p class="emoji-me">👋🏾</p>
     </div>
+</section>
+
+<section class="generic-section featured-section case-studies-section">
+    <h3>Featured</h3>
+
+    {% for featured in site.data.featured %}
+        <a href="{{featured.url}}" class="study featured-study">
+            
+            <!-- show this if you want the old tiles again -->
+            <!-- <div class="study-photo add-shadow"
+                 alt="{{ featured.title }}"
+                 style="background-image: url('{{ featured.img_url }}')">
+            </div> -->
+
+            <!-- remove this if you wanna remove parallax tiles, it's duplicative of the div above -->
+            <div class="container">
+                <div class="parallax">
+                    <div class="parallax-top-left"></div>
+                    <div class="parallax-top-right"></div>
+                    <div class="parallax-bottom-left"></div>
+                    <div class="parallax-bottom-right"></div>
+                    <div class="parallax-content">
+                        <div class="study-photo"
+                            alt="{{ featured.title }}"
+                            style="background-image: url('{{ featured.img_url }}')">
+                    </div>
+                </div>
+            </div>
+
+
+
+            <p class="study-title">
+              <strong>✨ {{featured.title}} ✨</strong>
+            </p>
+            <p class="study-data">{{featured.data}}</p>
+        </a>
+        {% endfor %}    
+</section>
+
+<section class="generic-section case-studies-section">
+    <h3>Case Studies</h3>
+
+    <div class="study-grid">
+        {% for portfolio in site.data.portfolio %}
+            <a href="{{portfolio.url}}" class="study case-study">
+                
+                <!-- show this if you want the old tiles again -->
+                <!-- <div class="study-photo add-shadow" 
+                    alt="{{ portfolio.title }}"
+                    style="background-image: url('{{ portfolio.img_url }}')">
+                </div> -->
+                
+                <!-- remove this if you wanna remove parallax tiles, it's duplicative of the div above -->
+                <div class="container">
+                    <div class="parallax">
+                        <div class="parallax-top-left"></div>
+                        <div class="parallax-top-right"></div>
+                        <div class="parallax-bottom-left"></div>
+                        <div class="parallax-bottom-right"></div>
+                        <div class="parallax-content">
+                            <div class="study-photo" 
+                                alt="{{ portfolio.title }}"
+                                style="background-image: url('{{ portfolio.img_url }}')">
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <p>
+                    <strong>{{portfolio.title}}</strong>
+                </p>
+                <p>{{portfolio.data}}</p>
+            </a>
+        {% endfor %}
+    </div>
+
 
 </section>
 
-<section class="case-studies">
-
-    <div class="wrapper--case-studies wrapper--case-studies_featured">
-
-        <aside>
-            <h2 id="featured">Featured</h2>
-        </aside>
-
-        <div class="grid">
-
-            {% for featured in site.data.featured %}
-            <div>
-                <a href="{{ featured.url }}">
-                    <div class="photo--rectangle"
-                        alt="{{ featured.title }}"
-                        style="background-image: url('{{ featured.img_url }}')"></div>
-                    <b class="title">✨ {{ featured.title }} ✨</b>
-                    <em class="data">{{ featured.data }}</em>
-                </a>
-            </div>
-            {% endfor %}
-
-        </div>
-    </div>
-
-
-
-    <div class="wrapper--case-studies">
-
-        <aside>
-            <h2>Case Studies</h2>
-        </aside>
-
-        <div class="grid">
-
-            {% for portfolio in site.data.portfolio %}
-            <div>
-                <a href="{{ portfolio.url }}">
-                    <div class="photo--rectangle"
-                        alt="{{ portfolio.title }}"
-                        style="background-image: url('{{ portfolio.img_url }}')"></div>
-                    <b class="title">{{ portfolio.title }}</b>
-                    <em class="data">{{ portfolio.data }}</em>
-                </a>
-            </div>
-            {% endfor %}
-
-        </div>
-    </div>
-
-</section>
-
-<section class="writing">
-
-    <div class="row">
-
-        <aside>
-            <h2>Experiments</h2>
-        </aside>
-
-        <div>
-
-            <ul class="list">
-
-                <li>
-                    <a href="http://100daysofbus.persona.co">
-                        <b class="title">#100daysofbus</b>
-                        <em class="date">Documentary · Photojournalism</em>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://medium.com/the-threshold">
-                        <b class="title">The Threshold</b>
-                        <em class="date">Writing · Essays</em>
-                    </a>
-                </li>
-
-
-                <li>
-                    <a href="https://github.com/kianlavi">
-                        <b class="title">Calma: Less Anxiety, More Breathing</b>
-                        <em class="date">iOS/watchOS App</em>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://github.com/kianlavi/cat-feeder">
-                        <b class="title">Catduino: An Automated Cat Feeder</b>
-                        <em class="date">Arduino · Hardware</em>
-                    </a>
-                </li>
-
-            </ul>
-
-        </div>
-
-    </div>
-
-    <div class="row">
-        <aside>
-            <h2 class="previous-year">2015</h2>
-        </aside>
-
-        <div>
-
-            <ul class="list">
-
-                <li>
-                    <a href="https://medium.com/p/44bfeff0c6af">
-                        <b class="title">Alibi: Get Out of Anything</b>
-                        <em class="date">iOS App</em>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        <b class="title">DLA Artwork</b>
-                        <em class="date">Album Art · Photography</em>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://babazorg.tumblr.com">
-                        <b class="title">The Babazorg Project</b>
-                        <em class="date">Photography · Documentary</em>
-                    </a>
-                </li>
-
-            </ul>
-
-        </div>
-
-    </div>
-
-    <div class="row">
-        <aside>
-            <h2 class="previous-year">2013</h2>
-        </aside>
-
-        <div>
-
-            <ul class="list">
-
-                <li>
-                    <a href="http://photography.kianlavi.com/portfolio-item/yellow-mambo-day/">
-                        <b class="title">Yellow Mambo DaY</b>
-                        <em class="date">Photography · Exhibition</em>
-                    </a>
-                </li>
-
-            </ul>
-
-        </div>
-
-    </div>
-
-    <div class="row">
-        <aside>
-            <h2 class="previous-year">2012</h2>
-        </aside>
-
-        <div>
-
-            <ul class="list">
-
-                <li>
-                    <a href="http://photography.kianlavi.com/portfolio-item/yellow-mambo-night/">
-                        <b class="title">Yellow Mambo NiGht</b>
-                        <em class="date">Photography · Exhibition</em>
-                    </a>
-                </li>
-
-            </ul>
-
-        </div>
-
-    </div>
-
-
+<section class="generic-section case-studies-section experiments-section">
+    <h3>Experiments</h3>
+    <ul class="experiments-list">
+        {% for experiment in site.data.experiments %}
+        <li class="experiment">
+            <a href="{{experiment.url}}" class="experiment-title">
+                <p>
+                <strong>{{experiment.title}}</strong>
+                </p>
+                <p class="experiment-type">{{experiment.type}}</p>
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
 </section>
