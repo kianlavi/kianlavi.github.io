@@ -4,7 +4,7 @@
 @charset "utf-8";
 
 // Our variables
-$base-font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-family: -apple-system, BlinkMacSystemFont, "Inter","Roboto", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-size:   18px !default;
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
@@ -13,8 +13,8 @@ $base-line-height: 1.4 !default;
 $spacing-unit:     30px !default;
 
 $text-color:       #222 !default;
-$background-color: #fafafa !default;
-$brand-color:      #4d80da !default;
+$background-color: #fff2d4 !default;
+$brand-color:      rgb(10, 78, 156) !default;
 
 $grey-color:       gray !default;
 $grey-color-light: lighten($grey-color, 20%) !default;
