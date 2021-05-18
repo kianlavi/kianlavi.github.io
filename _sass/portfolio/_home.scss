@@ -149,6 +149,25 @@ section.case-studies-section {
         height: 35vh;
         margin-bottom: 1rem;
     }
+
+    .study-meta {
+        align-items: center;
+        display: flex;
+    }
+
+    .study-company {
+        height: 40px;
+    }
+
+    .study-info {
+        padding-left: 0.5rem;
+    }
+
+    .study-secondary {
+        font-size: 0.8rem;
+    }
+
+
 }
 
 section.experiments-section {
@@ -260,7 +279,7 @@ footer {
     font-weight: $base--weight;
 
     .thanks-frank {
-        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        border-top: 0.5px solid rgba(10, 78, 156, 0.25);
         margin-top: 2rem;
         padding-top: 1rem;
 
