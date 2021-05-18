@@ -1,19 +1,23 @@
-- title: "Access Your Information"
-  data: "Facebook"
-  img_url: assets/study-fb_ayi@2x.png
-  url: https://medium.com/kianlavi/access-your-information-55deee4d6568?source=your_stories_page-------------------------------------
+- project: "Access Your Information"
+  company: "Facebook"
+  company_img: assets/co-fb.png
+  hero_url: assets/study-fb_ayi@2x.png
+  link: https://medium.com/kianlavi/access-your-information-55deee4d6568?source=your_stories_page-------------------------------------
 
-- title: "Killing Multicultural Affinity, Ad Keywords, Simplifying Targeting"
-  data: Facebook
-  img_url: assets/study-fb_mca.jpg
-  url: https://medium.com/kianlavi/killing-multicultural-affinity-ad-keywords-simplifying-targeting-78eb1aed7d6e?source=your_stories_page-------------------------------------
+- project: "Killing Multicultural Affinity, Ad Keywords, Simplifying Targeting"
+  company: Facebook
+  company_img: assets/co-fb.png
+  hero_url: assets/study-fb_mca.jpg
+  link: https://medium.com/kianlavi/killing-multicultural-affinity-ad-keywords-simplifying-targeting-78eb1aed7d6e?source=your_stories_page-------------------------------------
 
-- title: "Kian Lavi Design"
-  data: "Clients: MakerSights, Boost Media, Nova.ai"
-  img_url: assets/study-kl@2x.png
-  url: https://medium.com/@kianlavi/kian-lavi-design-cbe0d55eaed8
+- project: "Kian Lavi Design"
+  company: "Clients: MakerSights, Boost Media, Nova.ai"
+  company_img: assets/badge.png
+  hero_url: assets/study-kl@2x.png
+  link: https://kianlavi.medium.com/kian-lavi-design-cbe0d55eaed8
 
-- title: "PlayMemories Mobile + QX100 Camera"
-  data: "Sony"
-  img_url: assets/study-sony_plain@2x.png
-  url: https://medium.com/kianlavi/playmemories-mobile-qx100-72df16ea1a67?source=your_stories_page-------------------------------------
+- project: "PlayMemories Mobile + QX100 Camera"
+  company: "Sony"
+  company_img: assets/co-sony.jpg
+  hero_url: assets/study-sony_plain@2x.png
+  link: https://medium.com/kianlavi/playmemories-mobile-qx100-72df16ea1a67?source=your_stories_page-------------------------------------
