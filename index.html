@@ -8,26 +8,26 @@ layout: default
         alt="A portrait of Kian Lavi"
     >
     <div class="text-me">
+        <p class="emoji-me">👋🏾</p>
         <h1>
             {{site.description}}
         </h1>
         <p>
             {{site.extras}}
         </p>
-        <p class="emoji-me">👋🏾</p>
     </div>
 </section>
 
 <section class="generic-section featured-section case-studies-section">
-    <h3>Featured</h3>
+    <h3>Featured Design Work</h3>
 
     {% for featured in site.data.featured %}
-        <a href="{{featured.url}}" class="study featured-study">
+        <a href="{{featured.link}}" class="study featured-study">
             
             <!-- show this if you want the old tiles again -->
             <!-- <div class="study-photo add-shadow"
-                 alt="{{ featured.title }}"
-                 style="background-image: url('{{ featured.img_url }}')">
+                 alt="{{ featured.project }}"
+                 style="background-image: url('{{ featured.hero_url }}')">
             </div> -->
 
             <!-- remove this if you wanna remove parallax tiles, it's duplicative of the div above -->
@@ -39,18 +39,25 @@ layout: default
                     <div class="parallax-bottom-right"></div>
                     <div class="parallax-content">
                         <div class="study-photo"
-                            alt="{{ featured.title }}"
-                            style="background-image: url('{{ featured.img_url }}')">
+                            alt="{{ featured.project }}"
+                            style="background-image: url('{{ featured.hero_url }}')">
+                        </div>
                     </div>
-                </div>
+                </div>  
             </div>
 
+            <div class="study-meta">
+                <img src="{{featured.company_img}}" 
+                alt="" class="study-company">
 
-
-            <p class="study-title">
-              <strong>✨ {{featured.title}} ✨</strong>
-            </p>
-            <p class="study-data">{{featured.data}}</p>
+                <div class="study-info">
+                    <p class="study-title">
+                        <strong>{{featured.project}}</strong>
+                    </p>
+                    <p class="study-data">{{featured.company}}</p>
+                    <p class="study-secondary">🔒 Private • Email for a link</p>
+                </div>
+            </div>
         </a>
         {% endfor %}    
 </section>
@@ -60,12 +67,12 @@ layout: default
 
     <div class="study-grid">
         {% for portfolio in site.data.portfolio %}
-            <a href="{{portfolio.url}}" class="study case-study">
+            <a href="{{portfolio.link}}" class="study case-study">
                 
                 <!-- show this if you want the old tiles again -->
                 <!-- <div class="study-photo add-shadow" 
-                    alt="{{ portfolio.title }}"
-                    style="background-image: url('{{ portfolio.img_url }}')">
+                    alt="{{ portfolio.project }}"
+                    style="background-image: url('{{ portfolio.hero_url }}')">
                 </div> -->
                 
                 <!-- remove this if you wanna remove parallax tiles, it's duplicative of the div above -->
@@ -77,8 +84,8 @@ layout: default
                         <div class="parallax-bottom-right"></div>
                         <div class="parallax-content">
                             <div class="study-photo" 
-                                alt="{{ portfolio.title }}"
-                                style="background-image: url('{{ portfolio.img_url }}')">
+                                alt="{{ portfolio.project }}"
+                                style="background-image: url('{{ portfolio.hero_url }}')">
                             </div>  
                         </div>
                     </div>
@@ -86,10 +93,17 @@ layout: default
 
 
 
-                <p>
-                    <strong>{{portfolio.title}}</strong>
-                </p>
-                <p>{{portfolio.data}}</p>
+                <div class="study-meta">
+                    <img src="{{portfolio.company_img}}" 
+                        alt="" class="study-company">
+                
+                    <div class="study-info">
+                        <p class="study-title">
+                            <strong>{{portfolio.project}}</strong>
+                        </p>
+                        <p class="study-data">{{portfolio.company}}</p>
+                    </div>
+                </div>
             </a>
         {% endfor %}
     </div>
