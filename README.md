@@ -11,7 +11,7 @@ it's really just one thing: a homepage that houses links to my case studies, whi
 
 ## changelog
 - may 2021
-  - added an all-new yellow design, courtest of angela he
+  - added an all-new yellow design, courtesy of angela he
   - added a new photo of me, post-pandemic, mid-mask
   - updated my projects to: privacy center, ayi, ads, makersights, sony
   - added a fancy 3d parallax effect
