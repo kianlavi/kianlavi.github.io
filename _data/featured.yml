@@ -1,5 +1,5 @@
-- project: "Facebook Privacy Center"
-  company: "Facebook"
-  company_img: assets/co-fb.png
+- project: "Meta Privacy Center"
+  company: "Meta"
+  company_img: https://1000logos.net/wp-content/uploads/2021/10/logo-Meta.png
   hero_url: assets/study-fb_privacycenter@2x.png
   link: https://medium.com/kianlavi/privacy-center-5ae01a5e48f0
