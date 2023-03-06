@@ -16,7 +16,7 @@ $color--background:   $background-color;
 }
 
 body {
-    background-color: #fff2d4;
+    background-color: $background-color;
     color: $brand-color;
 }
 
@@ -49,10 +49,10 @@ a {
 }
 
 a.link-special {
+    border-bottom: 1px solid $color--background; 
     transition: 
         border-bottom 0.2s ease-in-out,
         color 0.2s ease-in-out;
-    border-bottom: 1px solid $color--background; 
 
     &:hover {
         border-bottom: 1px solid $text-color;
@@ -89,6 +89,7 @@ header {
     }
 
     li a {
+        color: $grey-color-50;
         font-size: 0.75rem;
         opacity: 0.66;
         text-transform: uppercase;;
@@ -125,12 +126,17 @@ section.about-section {
 
     .emoji-me {
         font-size: 2rem;
+        opacity: 1;
+    }
+
+    p {
+        color: $text-color;
+        opacity: 0.5;
     }
 }
 
 section.case-studies-section {
-    // background-color: red;
-    border-top: 2px solid $brand-color;
+    border-top: 2px solid $grey-color-25;
     margin-top: 2rem;
     padding: 1rem 0;
 
@@ -150,13 +156,21 @@ section.case-studies-section {
         margin-bottom: 1rem;
     }
 
+    .study-data {
+        color: $grey-color-50;        
+        font-size: 0.8rem;
+        font-weight: 600;
+        // line-height: 1.2rem;
+        text-transform: uppercase;
+    }
+
     .study-meta {
         align-items: center;
         display: flex;
     }
 
     .study-company {
-        height: 40px;
+        height: 2rem;
     }
 
     .study-info {
@@ -181,22 +195,27 @@ section.experiments-section {
     }
 
     .experiment-title {
-        border-bottom: 1px solid rgba(10, 78, 156, 0.5);
+        border-bottom: 1px solid $grey-color-25;
         display: flex;
         padding: 0.75rem 0;
         width: 50vw;
     }
 
     .experiment-type {
+        color: $grey-color-50;
         flex-grow: 1;
         margin-left: 1rem;
         text-align: right;
+
+        font-size: 0.65rem;
+        font-weight: 400;
+        line-height: 1.2rem;
+        text-transform: uppercase;
     }
 
     p {
         display: inline-block;
         font-size: 0.75rem;
-        // width: 49%;
     }
 }
 
@@ -213,7 +232,7 @@ section.writing {
 
     .row {
         align-items: baseline;
-        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        border-top: 1px solid $grey-color-25;
         display: flex;
 
         aside {
@@ -279,15 +298,17 @@ footer {
     font-weight: $base--weight;
 
     .thanks-frank {
-        border-top: 0.5px solid rgba(10, 78, 156, 0.25);
+        border-top: 0.5px solid $grey-color-25;
         margin-top: 2rem;
         padding-top: 1rem;
 
         p {
+            color: $color--text;
             font-size: 0.75rem;
         }
 
         a {
+            color: $grey-color-50;
             font-weight: 600;
         }
     }
