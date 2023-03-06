@@ -1,7 +1,14 @@
+- project: "Nextria"
+  company: "🔒 Meta • Coming Soon"
+  company_img: https://1000logos.net/wp-content/uploads/2021/10/logo-Meta.png
+  hero_url: /assets/nextria cover.png
+  link: 
+
+
 - project: "Family Center and Education Hub"
   company: "Instagram app"
   company_img: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/768px-Instagram_logo_2016.svg.png
-  hero_url: https://scontent-sjc3-1.xx.fbcdn.net/v/t39.8562-6/119776282_921551208250591_7504477318627411129_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=6825c5&_nc_ohc=Lb7Z-BGvt6kAX9pfsDL&_nc_ht=scontent-sjc3-1.xx&oh=00_AT9SVSrsUJp7mps4x5nCB0FlpzE9RhJlI_l838R7Hj-DOg&oe=61E1B4CE
+  hero_url: https://miro.medium.com/v2/resize:fit:1400/format:webp/1*6nBaxeYaOHULhDfhoeD-zQ.jpeg
   link: https://medium.com/kianlavi/instagrams-family-center-and-education-hub-c7727f5f5c36
 
 - project: "Access Your Information"
