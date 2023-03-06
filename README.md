@@ -1,15 +1,17 @@
 # the design portfolio of kian lavi
-every year or so, designers get the itch to recreate their portfolio. this is my attempt at creating a living portfolio, that needs little to no maintenance. i've gone from WordPress junk to Hand-Written junk, now to Jekyll-based junk. now all that remains custom is this homepage i publish to [kian.design](kian.design)
+every year, us designers get the itch to redo our portfolio. this is my simplified attempt at a living portfolio. i've gone from custom everything, to this simple homepage i made using jekyll, sass, html, and yaml to house links to case studies on medium. everything get's published directly to [kian.design](http://kian.design)
 
-## ok, so what is this?
-it's really just one thing: a homepage that houses links to my case studies, which are hosted on Medium. my logic is that i have neither the time nor the energy to maintain a well-designed article view, so i'll just focus on making this homepage look and feel like a nice entryway to me, kian. 
-
-## future me, how do i install this?
-1. clone this repo
-2. make sure you get the Jekyll gem, `(sudo) gem install jekyll; bundle install`
-3. and that's it. you probably have to run the `bundle` command, but VS Code should remember how
+# for future me: how to install
+1. clone this repo and make sure you have xcode command line tools, `brew`, and `ruby` installed
+2. install jekyll: `sudo gem install jekyll; bundle install`
+3. you might need to run `bundle` once, but then run the server using `bundle exec jekyll serve`
 
 ## changelog
+- march 2023
+  - added a new dark mode design, that reminds me of obsidian
+  - added a new photo of me, post-pandemic, in italy
+  - updated photo for family center so it would work
+  - added a portfolio entry for nextria
 - may 2021
   - added an all-new yellow design, courtesy of angela he
   - added a new photo of me, post-pandemic, mid-mask
