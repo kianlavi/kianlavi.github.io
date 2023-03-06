@@ -16,11 +16,11 @@
 title: Kian Lavi Design
 email: kianlavi+jobs@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  I’m Kian Lavi (he/him), a <strong>product designer</strong>, <strong>ethicist</strong>, and <strong>documentary photographer.</strong>
+  I’m Kian Lavi (he/they), a <strong>product designer</strong> and <strong>documentary photographer.</strong>
 extras: > 
-  Currently a design and ethics lead for the Privacy team at Facebook. It's pronounced key • on.
+  Currently leading video game design within Meta's New Products Experimentation organization. <br> It's pronounced key • on.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://kianlavi.com" # the base hostname & protocol for your site
+url: "http://kian.design" # the base hostname & protocol for your site
 twitter_username: kianlavi
 github_username:  kianlavi
 
