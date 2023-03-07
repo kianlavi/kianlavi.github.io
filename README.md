@@ -8,6 +8,7 @@ every year, us designers get the itch to redo our portfolio. this is my simplifi
 
 ## changelog
 - march 2023
+  - added a new resume
   - added a new dark mode design, that reminds me of obsidian
   - added a new photo of me, post-pandemic, in italy
   - updated photo for family center so it would work
@@ -17,3 +18,4 @@ every year, us designers get the itch to redo our portfolio. this is my simplifi
   - added a new photo of me, post-pandemic, mid-mask
   - updated my projects to: privacy center, ayi, ads, makersights, sony
   - added a fancy 3d parallax effect
+
