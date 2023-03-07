@@ -10,19 +10,19 @@
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="{{ site.title }}">
 	<meta name="twitter:description" content="{{ default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-	<meta name="twitter:image" content="{{ "/assets/badge.png" || prepend: site.baseurl }}">
+	<meta name="twitter:image" content="{{ "/badge.png" || prepend: site.baseurl }}">
 
 	<!-- Open Graph -->
 	<meta property="og:locale" content="en_US">
 	<meta property="og:title" content="{{ site.title }}">
 	<meta property="og:description" content="{{ default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 	<meta property="og:url" content="{{ site.url }}">
-	<meta property="og:image" content="{{ "/assets/badge.png" || prepend: site.baseurl }}">
+	<meta property="og:image" content="{{ "/badge.png" || prepend: site.baseurl }}">
   <meta property="og:type" content="website">
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <!-- <link rel="shortcut icon" type="image/x-icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}"> -->
-  <link rel="shortcut icon" type="image/x-icon" href="{{ "/assets/badge.png" | prepend: site.baseurl }}">
+  <link rel="shortcut icon" type="image/x-icon" href="{{ "/badge.png" | prepend: site.baseurl }}">
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
