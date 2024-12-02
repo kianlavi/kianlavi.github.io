@@ -4,7 +4,7 @@ this simple homepage is made using `jekyll`, `sass`, `yaml`, and plain old `html
 ## how to install, for a future kian
 1. clone this repo — make sure you have [`brew`](https://brew.sh/) and `ruby` installed and up-to-date
 2. install `jekyll` and `bundle`: **`sudo gem install jekyll; bundle install`**
-3. run `bundle` at least once, then run local server with **`bundle exec jekyll serve` **
+3. run `bundle` at least once, then run local server with **`bundle exec jekyll serve`**
 
 ## changes, from a past kian
 - **december 2024**
