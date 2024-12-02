@@ -1,12 +1,12 @@
 # design portfolio 
 this simple homepage is made using `jekyll`, `sass`, `yaml`, and plain old `html`. everything links to case studies on `medium.com`, and this repo's master branch publishes directly to [kian.design](https://kian.design)
 
-# how to install, for a future kian
+## how to install, for a future kian
 1. clone this repo — make sure you have [`brew`](https://brew.sh/) and `ruby` installed and up-to-date
 2. install `jekyll` and `bundle`: `sudo gem install jekyll; bundle install`
 3. run `bundle` at least once, then run local server with `bundle exec jekyll serve` 
 
-## changes
+## changes, from a past kian
 - december 2024
   - added a new portrait of me
   - updated link colors to be more yellow
