@@ -16,9 +16,9 @@
 title: Kian Lavi Design
 email: kianlavi+jobs@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  I’m Kian Lavi (he/they), a <strong>product designer</strong> and <strong>documentary photographer.</strong>
-extras: > 
-  Currently leading video game design within Meta's New Products Experimentation organization. It's pronounced <strong>key • on</strong>.
+  <strong>Hi, I'm Kian Lavi (he/they). I'm a Product Designer at Meta.</strong>
+extras: >
+  Currently working on WhatsApp and Business Messaging. It's pronounced <span class="pronounciation"><strong>key • on.</strong></span>
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://kian.design" # the base hostname & protocol for your site
 twitter_username: kianlavi
