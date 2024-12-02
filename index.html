@@ -3,13 +3,13 @@ layout: default
 ---
 
 <section class="generic-section about-section">
-    <img class="photo-me" 
-        src="me.png" 
+    <img class="photo-me"
+        src="me.jpg"
         alt="A portrait of Kian Lavi"
     >
     <div class="text-me">
         <p class="emoji-me">👋🏾</p>
-        <h1> 
+        <h1>
             {{site.description}}
         </h1>
         <p>
@@ -23,7 +23,7 @@ layout: default
 
     {% for featured in site.data.featured %}
         <a href="{{featured.link}}" class="study featured-study">
-            
+
             <!-- show this if you want the old tiles again -->
             <!-- <div class="study-photo add-shadow"
                  alt="{{ featured.project }}"
@@ -43,11 +43,11 @@ layout: default
                             style="background-image: url('{{ featured.hero_url }}')">
                         </div>
                     </div>
-                </div>  
+                </div>
             </div>
 
             <div class="study-meta">
-                <img src="{{featured.company_img}}" 
+                <img src="{{featured.company_img}}"
                 alt="" class="study-company">
 
                 <div class="study-info">
@@ -59,7 +59,7 @@ layout: default
                 </div>
             </div>
         </a>
-        {% endfor %}    
+        {% endfor %}
 </section>
 
 <section class="generic-section case-studies-section">
@@ -68,13 +68,13 @@ layout: default
     <div class="study-grid">
         {% for portfolio in site.data.portfolio %}
             <a href="{{portfolio.link}}" class="study case-study">
-                
+
                 <!-- show this if you want the old tiles again -->
-                <!-- <div class="study-photo add-shadow" 
+                <!-- <div class="study-photo add-shadow"
                     alt="{{ portfolio.project }}"
                     style="background-image: url('{{ portfolio.hero_url }}')">
                 </div> -->
-                
+
                 <!-- remove this if you wanna remove parallax tiles, it's duplicative of the div above -->
                 <div class="container">
                     <div class="parallax">
@@ -83,10 +83,10 @@ layout: default
                         <div class="parallax-bottom-left"></div>
                         <div class="parallax-bottom-right"></div>
                         <div class="parallax-content">
-                            <div class="study-photo" 
+                            <div class="study-photo"
                                 alt="{{ portfolio.project }}"
                                 style="background-image: url('{{ portfolio.hero_url }}')">
-                            </div>  
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -94,9 +94,9 @@ layout: default
 
 
                 <div class="study-meta">
-                    <img src="{{portfolio.company_img}}" 
+                    <img src="{{portfolio.company_img}}"
                         alt="" class="study-company">
-                
+
                     <div class="study-info">
                         <p class="study-title">
                             <strong>{{portfolio.project}}</strong>
