@@ -1,12 +1,16 @@
-# the design portfolio of kian lavi
-every year, us designers get the itch to redo our portfolio. this is my simplified attempt at a living portfolio. i've gone from custom everything, to this simple homepage i made using jekyll, sass, html, and yaml to house links to case studies on medium. everything get's published directly to [kian.design](http://kian.design)
+# design portfolio 
+this simple homepage is made using `jekyll`, `sass`, `yaml`, and plain old `html`. everything links to case studies on `medium.com`, and this repo's master branch publishes directly to [kian.design](https://kian.design)
 
-# for future me: how to install
-1. clone this repo and make sure you have xcode command line tools, `brew`, and `ruby` installed
-2. install jekyll: `sudo gem install jekyll; bundle install`
-3. you might need to run `bundle` once, but then run the server using `bundle exec jekyll serve`
+# how to install, for a future kian
+1. clone this repo — make sure you have [`brew`](https://brew.sh/) and `ruby` installed and up-to-date
+2. install `jekyll` and `bundle`: `sudo gem install jekyll; bundle install`
+3. run `bundle` at least once, then run local server with `bundle exec jekyll serve` 
 
-## changelog
+## changes
+- december 2024
+  - added a new portrait of me
+  - updated link colors to be more yellow
+  - updated some styling so that fonts are a little weightier, padding is a little looser
 - march 2023
   - added a new resume
   - added a new dark mode design, that reminds me of obsidian
